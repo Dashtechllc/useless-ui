@@ -1,11 +1,11 @@
 {
-  "name": "useless-ui",
+  "name": "@dashtechllc/useless-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "publishConfig": {
-    "@dashtechllc:registry": "https://npm.pkg.github.com@dashtechllc"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",

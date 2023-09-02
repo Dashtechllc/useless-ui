@@ -8,7 +8,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "ES6",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,

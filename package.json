@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+"release": {
+  "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"
+},
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },

@@ -1,5 +1,19 @@
 import { FunctionComponent, HTMLProps, useMemo } from 'react';
 
+const getSizeClasses = (size: string): string => {
+  switch (size) {
+    case 'small': {
+      return 'form-padding-sm text-xs';
+    }
+    case 'large': {
+      return 'form-padding-lg text-base';
+    }
+    default: {
+      return 'form-padding-md text-sm';
+    }
+  }
+};
+
 export interface ButtonProps
   extends Omit<HTMLProps<HTMLButtonElement>, 'size'> {
   type?: 'primary' | 'gradient';
@@ -13,33 +27,19 @@ export const Button: FunctionComponent<ButtonProps> = ({
   children,
   ...restProps
 }) => {
-  const getSizeClasses = (): string => {
-    switch (size) {
-      case 'small': {
-        return 'px-4 py-2.5 text-xs';
-      }
-      case 'large': {
-        return 'px-6 py-3 text-base';
-      }
-      default: {
-        return 'px-5 py-2.5 text-sm';
-      }
-    }
-  };
-
   const getTypeClassess = (): string => {
     switch (type) {
       case 'primary': {
-        return 'bg-blue-600 rounded-3xl transition-all duration-500 text-white font-bold';
+        return 'bg-brand-500 rounded-3xl transition-all duration-500 text-white font-bold';
       }
       default: {
-        return 'bg-gradient-to-br from-blue-600 to-blue-400 rounded-3xl transition-all duration-500 bg-size-200 bg-pos-0 text-white font-bold  hover:bg-pos-100';
+        return 'bg-gradient-to-r from-brand-600 to-brand-500 rounded-3xl transition-all duration-500 bg-size-200 bg-pos-50 text-white font-bold  hover:bg-pos-0';
       }
     }
   };
 
   const computedClasses = useMemo(() => {
-    const sizeClasses = getSizeClasses();
+    const sizeClasses = getSizeClasses(size);
     const typeClasses = getTypeClassess();
 
     return [sizeClasses, typeClasses].join(' ');

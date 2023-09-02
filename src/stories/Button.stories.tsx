@@ -8,7 +8,7 @@ const meta = {
       control: {
         type: 'select',
       },
-      options: ['primary', 'secondary', 'gradient '],
+      options: ['primary', 'gradient '],
     },
   },
 } satisfies Meta<typeof Button>;
@@ -17,8 +17,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
-  render: (args) => <Button {...args}>Холбогдох</Button>,
+export const Default: Story = {
+  render: (args) => <Button {...args}>Click the button</Button>,
   args: {
     type: 'gradient',
     size: 'medium',

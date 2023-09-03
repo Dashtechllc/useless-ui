@@ -55,7 +55,6 @@
     "typescript": "5.1.6"
   },
   "dependencies": {
-    "@dashtechllc/useless-ui": "1.0.7",
     "@rollup/plugin-babel": "6.0.3",
     "@rollup/plugin-node-resolve": "15.1.0",
     "@rollup/plugin-typescript": "11.1.2",

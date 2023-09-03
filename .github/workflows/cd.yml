@@ -35,9 +35,9 @@ jobs:
           extra_plugins: |
               @semantic-release/commit-analyzer
               @semantic-release/release-notes-generator
-              @semantic-release/github
               @semantic-release/npm
               @semantic-release/git
+              @semantic-release/github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

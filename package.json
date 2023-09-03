@@ -4,6 +4,7 @@
   "description": "Useless UI package that based on Tailwind css.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
+  "module": "dist/index.js",
   "type": "module",
   "release": {
     "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"

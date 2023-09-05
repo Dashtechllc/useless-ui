@@ -30,7 +30,7 @@ export const Select: FunctionComponent<SelectProps> = ({
   defaultValue,
   className,
   size = 'medium',
-  placeholder = 'Select',
+  placeholder = 'Choose',
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const defaultOption = options.find((option) => option.value === defaultValue);

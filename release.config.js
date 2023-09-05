@@ -8,6 +8,7 @@ module.exports = {
       '@semantic-release/npm',
       { npmPublish: false, tarballDir: 'dist', pkgRoot: '.' },
     ],
+    '@semantic-release/github',
     [
       '@semantic-release/git',
       {
@@ -17,6 +18,5 @@ module.exports = {
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
-    '@semantic-release/github',
   ],
 };

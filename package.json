@@ -1,6 +1,6 @@
 {
   "name": "@dashtechllc/useless-ui",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Useless UI package that based on Tailwind css.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",

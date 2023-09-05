@@ -33,7 +33,6 @@ jobs:
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:
-          dry_run: true
           tag_format: '${version}'
           branches: |
             [

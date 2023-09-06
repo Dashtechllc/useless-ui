@@ -6,12 +6,16 @@
   "types": "dist/index.d.js",
   "module": "dist/index.es.js",
   "type": "module",
+  "private": true,
   "release": {
     "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",

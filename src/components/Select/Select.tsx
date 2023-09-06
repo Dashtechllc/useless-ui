@@ -28,7 +28,7 @@ export const Select: FunctionComponent<SelectProps> = ({
   options,
   onChange,
   defaultValue,
-  className,
+  className = '',
   size = 'medium',
   placeholder = 'Choose',
 }) => {

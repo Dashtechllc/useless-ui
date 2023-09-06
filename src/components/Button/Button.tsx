@@ -47,7 +47,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
 
   return (
     <button
-      className={`${computedClasses} ${className}`}
+      className={`${computedClasses} ${className ?? ''}`}
       type="button"
       {...restProps}
     >

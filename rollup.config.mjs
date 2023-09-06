@@ -2,6 +2,7 @@ import babel from '@rollup/plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import typescript from '@rollup/plugin-typescript';
+import common from '@rollup/plugin-commonjs'
 
 export default [
   {
@@ -16,6 +17,7 @@ export default [
     ],
 
     plugins: [
+      common(),
       babel({
         exclude: 'node_modules/**',
       }),

@@ -2,9 +2,6 @@
   "name": "@dashtechllc/useless-ui",
   "version": "1.0.19",
   "description": "Useless UI package that based on Tailwind css.",
-  "main": "index.js",
-  "types": "index.d.js",
-  "module": "index.es.js",
   "release": {
     "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"
   },
@@ -14,6 +11,9 @@
   "files": [
     "dist"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",

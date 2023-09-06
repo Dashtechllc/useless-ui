@@ -6,7 +6,6 @@
   "types": "dist/index.d.js",
   "module": "dist/index.es.js",
   "type": "module",
-  "private": true,
   "release": {
     "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"
   },

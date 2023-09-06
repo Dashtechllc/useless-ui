@@ -17,6 +17,10 @@ jobs:
           node-version: 20.5
       - run: npm ci
       - run: npm run build
+      - name: List project directory
+        run: ls -al
+      - name: Print semantic-release config
+        run: cat .releaserc.json
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:

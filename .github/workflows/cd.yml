@@ -20,7 +20,7 @@ jobs:
       - name: List project directory
         run: ls -al
       - name: Print semantic-release config
-        run: cat .releaserc.json
+        run: cat .releaserc.yml
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
         with:

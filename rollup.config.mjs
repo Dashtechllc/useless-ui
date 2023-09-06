@@ -25,13 +25,10 @@ export default [
         exclude: 'node_modules/**',
       }),
       postcss({
-        plugins: [
-          tailwindcss('./tailwind.config.js'),
-          autoprefixer,
-        ],
-        inject: false, 
-        extract: true, 
-        minimize: true, 
+        plugins: [tailwindcss('./tailwind.config.js'), autoprefixer],
+        inject: false,
+        extract: true,
+        minimize: true,
       }),
       external(),
       resolve({

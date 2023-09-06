@@ -23,5 +23,12 @@
     }
   },
   "include": ["src"],
-  "exclude": ["stories", "node_modules",]
+  "exclude": ["stories", "node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "types": ["node"],
+      "resolveJsonModule": true
+    }
+  }
 }

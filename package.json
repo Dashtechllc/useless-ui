@@ -5,7 +5,7 @@
   "description": "Useless UI package that based on Tailwind css.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
   "type": "module",
   "release": {
     "repositoryUrl": "https://github.com/Dashtechllc/useless-ui.git"
@@ -25,7 +25,9 @@
   "author": "Dash Technology LLC",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "7.22.14",
     "@babel/preset-react": "7.22.5",
+    "@babel/preset-typescript": "7.22.11",
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@storybook/addon-essentials": "7.2.3",
@@ -58,6 +60,7 @@
   },
   "dependencies": {
     "@rollup/plugin-babel": "6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "15.1.0",
     "@rollup/plugin-typescript": "11.1.2",
     "react": "18.2.0",
